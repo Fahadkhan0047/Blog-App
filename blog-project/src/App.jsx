@@ -1,8 +1,16 @@
 import './App.css'
+import {useDispatch} from 'react-redux'
+import { useState , useEffect} from 'react'
+import authService from './appwrite/auth'
 
 function App() {
-  console.log(import.meta.env.VITE_APPWRITE_URL);
+  const [loading, setloading] = useState(true)
+  const dispatch = useDispatch()
 
+  useEffect(() => {
+    
+  }, [])
+  
   return (
     <>
      <h1>Blog App using Appwrite</h1>
